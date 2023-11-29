@@ -9,6 +9,7 @@ import { Subscription, debounceTime } from 'rxjs';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+  baseHref:string = '/deploy';
   productList: Products[] = [
     { id: 11, name: 'Remote Car', price: '$99.00', image: 'assets/images/placeholder.png', category: 'Toys' },
     { id: 12, name: 'Power of Mind', price: '$99.00', image: 'assets/images/placeholder.png', category: 'Books' },
